@@ -14,7 +14,9 @@ public class FinanceInfoBuilderFactory
     // Обратите внимание, что здесь мы ВЫНУЖДЕНЫ писать реальный класс
     // Хорошо, что это мы делаем только в одном месте, ане в каждой
     // строке, где нам потребуется обращение к FinanceInfoBuilder
-    return new DbFinanceInfoBuilder();
+    //return new DbFinanceInfoBuilder();
+    // теперь мы будем создавать информацию через web
+    return new WebFinanceInfoBuilder();
   }
   
 }
